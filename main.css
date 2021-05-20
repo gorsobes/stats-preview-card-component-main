@@ -1,0 +1,158 @@
+body{
+    font-size: 15px;
+}
+#img-mobil{
+    display: none;
+}
+#statistic-mobil{
+    display: none;
+}
+#wrapper{
+    width:1440px ;
+    height: 800px;
+    background-color: hsl(233, 47%, 7%);
+    position: relative; 
+}
+#card{
+    background-color:hsl(244, 38%, 16%);
+    display: flex;
+    width: 1110px;
+    height: 450px;
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-radius: 10px;    
+}
+#img{
+    background-color:hsl(277, 64%, 61%);
+    border-radius: 0 10px 10px 0;
+}
+#img img{
+    height: 450px;
+    border-radius: 0 10px 10px 0;
+    opacity: 0.4;
+}
+h1 {
+    margin: 70px 100px 30px 75px;
+    font-size: 36px;
+    color:hsl(0, 0%, 100%);
+    font-family: 'Inter', sans-serif;
+}
+h1 span{
+    color:hsl(277, 64%, 61%);
+}
+p#text {
+    margin: 0px 130px 0 75px;
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+    line-height: 25px;
+    color:#aaa8c3;
+    
+}
+p.statistik{
+    color:#aaa8c3;
+    display: inline; 
+    position: relative;
+    top: 62px;
+    font-size: 12px;
+    left: 45px;
+    padding: 29px;
+    font-family: 'Lexend Deca', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.statistik.tit{
+    color: hsl(0, 0%, 100%);
+    display: inline;
+    font-size: 23px;
+    line-height: 44px;
+    word-spacing: 27px;
+    font-family: 'Inter', sans-serif;
+    text-transform: none;
+
+}
+/*mobil 375px*/
+@media screen and (max-width: 375px){
+    #wrapper{
+        width:375px ;
+        height: 956px;
+        position: relative;     
+    }
+
+    #card{
+       
+        display: block;
+        width: 328px;
+        height: 780px;       
+    }
+    #img  {
+        display: none;    
+    }
+    .statistik{
+        display: none !important;
+    }
+    #statistic-mobil{
+        display: block;
+    }
+    #img-mobil{
+        display: block;
+        background-color:hsl(277, 64%, 61%);
+        border-radius: 10px 10px 0 0;
+        height: 240px;
+    }
+    #img-mobil img{
+        height: 240px;
+        border-radius: 10px 10px 0 0;
+        opacity: 0.4;
+    }
+    h1 {
+        margin: 38px 20px 10px 20px;
+        font-size: 28px;
+        text-align: center;
+        line-height: 32px;
+    }
+
+    p#text {
+        margin: 17px 26px 0 28px;
+        font-size: 15px;
+        font-family: 'Inter', sans-serif;
+        line-height: 25px;
+        text-align: center;
+    }
+ p span {
+    color: #aaa8c3;
+        margin: 0px 3px 0 0;
+    }
+div#statistic-mobil {
+        width: 240px;
+        text-align: center;
+        padding-top: 3px;
+    }
+.statistic-mobil{
+        position: relative;
+        font-size: 12px;
+        left: 45px;
+        font-family: 'Lexend Deca', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color:#aaa8c3;
+}
+.mtik{
+        font-size: 23px;
+        font-family: 'Inter', sans-serif;
+        text-transform: none;
+        line-height: 0px;
+        font-weight: bold;
+        padding: 30px 0 12px;
+        margin: 0;
+        color:hsl(0, 0%, 100%);
+}
+}
+
